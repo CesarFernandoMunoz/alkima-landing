@@ -296,7 +296,8 @@ function Blog() {
         {blogPosts.map(post => (
           <article key={post.slug} style={{ background: C.card, border: `1px solid ${C.border}`, borderRadius: 20, overflow: 'hidden', cursor: 'pointer', transition: 'transform .2s, border-color .2s' }}
             onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,.15)' }}
-            onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.borderColor = C.border }}>
+            onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.borderColor = C.border }}
+            onClick={() => window.location.href = `/blog/${post.slug}`}>
             <div style={{ background: 'linear-gradient(135deg,rgba(27,94,247,.15),rgba(8,145,178,.1))', height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Icon name="book" size={40} color="rgba(255,255,255,.2)" />
             </div>
@@ -307,9 +308,9 @@ function Blog() {
               </div>
               <h3 style={{ fontSize: 16, fontWeight: 700, color: C.text, margin: '0 0 10px', letterSpacing: '-.02em', lineHeight: 1.4 }}>{post.title}</h3>
               <p style={{ fontSize: 13, color: C.textMid, margin: '0 0 16px', lineHeight: 1.6 }}>{post.excerpt}</p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: C.accent, fontWeight: 600 }}>
+              <a href={`/blog/${post.slug}`} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: C.accent, fontWeight: 600, textDecoration: 'none' }}>
                 Leer artículo <Icon name="arrow" size={13} color={C.accent} />
-              </div>
+              </a>
             </div>
           </article>
         ))}
