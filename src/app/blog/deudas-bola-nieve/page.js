@@ -21,11 +21,11 @@ export default function Article() {
   return (
     <div style={{ background: C.dark, minHeight: '100vh', fontFamily: "'Sora', sans-serif" }}>
       <nav style={{ borderBottom: `1px solid ${C.border}`, backdropFilter: 'blur(20px)', background: 'rgba(10,8,18,0.85)', padding: '0 24px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 100 }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
+        <Link href="/finanzas" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <div style={{ width: 36, height: 36, background: 'linear-gradient(135deg,#1B5EF7,#0891B2)', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: 18, color: '#fff' }}>A</div>
           <span style={{ fontWeight: 800, fontSize: 18, color: C.text }}>Alkima</span>
         </Link>
-        <Link href="/#blog" style={{ color: C.textMid, textDecoration: 'none', fontSize: 14 }}>← Volver al blog</Link>
+        <Link href="/finanzas#blog" style={{ color: C.textMid, textDecoration: 'none', fontSize: 14 }}>← Volver al blog</Link>
       </nav>
 
       <article style={{ maxWidth: 720, margin: '0 auto', padding: '60px 24px 100px' }}>
