@@ -4,7 +4,7 @@
 export const site = {
   nombre: 'Alkima Labs',
   marca: 'Alkima',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://alkima.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alkima.app', // alkima.app redirige a www en Vercel
   appUrl: process.env.NEXT_PUBLIC_APP_URL || 'https://app.alkima.app',
   correo: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@alkima.app',
   pais: 'Ecuador',
