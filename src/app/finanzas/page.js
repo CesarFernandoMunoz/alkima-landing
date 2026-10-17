@@ -244,6 +244,9 @@ function Pricing() {
           </a>
         </div>
         <p style={{ fontSize: 12, color: C.textLight }}>¿Tienes preguntas? Escríbenos a hola@alkima.app</p>
+        <p style={{ fontSize: 13, color: C.textMid, marginTop: 18, lineHeight: 1.6 }}>
+          Alkima Finanzas es gratis y la construye <a href="/?desde=finanzas" style={{ color: '#C8F449', fontWeight: 700 }}>Alkima Labs</a>, un estudio ecuatoriano de software a medida para empresas. Es nuestra carta de presentación: si te gusta cómo está hecha, imagina lo que podemos hacer para tu negocio.
+        </p>
       </div>
     </section>
   )
