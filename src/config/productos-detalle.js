@@ -17,9 +17,11 @@ export const detalles = {
     flujo: ['El ERP genera los pedidos del día', 'Despacho arma y asigna las rutas', 'El conductor entrega y registra evidencia', 'La oficina y el cliente ven el estado al instante'],
     entrega: ['En producción desde 2026 en una distribuidora de Quito', 'Datos separados por empresa con bitácora de cambios', 'Ambiente de pruebas separado y despliegue reproducible', 'Manual de usuario y nota técnica incluidos'],
     pantallas: [
-      { src: '/productos/hoja-viva/01-rutas.png', pie: 'Rutas del día con avance por conductor' },
-      { src: '/productos/hoja-viva/02-entrega.png', pie: 'Registro de una entrega desde el celular' },
-      { src: '/productos/hoja-viva/03-tablero.png', pie: 'Tablero de seguimiento de la oficina' },
+      { src: '/productos/hoja-viva/01-rutas.jpg', pie: 'La ruta del día en el celular del conductor: paradas, direcciones y observaciones del cliente', movil: true },
+      { src: '/productos/hoja-viva/02-entrega.jpg', pie: 'Registro de una entrega: foto de la guía firmada, quién recibe, entrega parcial, no entregado o consulta a SAC', movil: true },
+      { src: '/productos/hoja-viva/03-armado.jpg', pie: 'Armado de rutas en la oficina: bandeja de despachos que esperan ruta, alertas y asignación al camión' },
+      { src: '/productos/hoja-viva/04-tablero.jpg', pie: 'Tablero de avance: rutas, paradas, hora media de salida y de última entrega, reintentos y novedades' },
+      { src: '/productos/hoja-viva/05-incidencias.jpg', pie: 'Incidencias de entrega: causa, área de origen, plazo de 48 horas y cierre por Servicio al Cliente' },
     ],
   },
   taller: {

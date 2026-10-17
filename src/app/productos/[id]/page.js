@@ -58,7 +58,7 @@ export default function Producto({ params }) {
               <h2><span className="ligero">Así se ve.</span>Pantallas reales, con datos de prueba.</h2>
               <div className="galeria">
                 {pantallas.map(s => (
-                  <figure key={s.src} className="pantalla">
+                  <figure key={s.src} className={`pantalla${s.movil ? ' movil' : ''}`}>
                     <img src={s.src} alt={s.pie} loading="lazy" />
                     <figcaption>{s.pie}</figcaption>
                   </figure>
