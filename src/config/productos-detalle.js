@@ -40,9 +40,9 @@ export const detalles = {
     flujo: ['El cliente deja el equipo y recibe su comprobante', 'Diagnóstico y cotización con aprobación', 'Reparación con registro de repuestos y horas', 'Aviso al cliente y entrega con firma'],
     entrega: ['En piloto desde octubre de 2026 en un laboratorio de equipos de detección de gases', 'Ambiente de demostración separado de producción', 'Datos separados por empresa, roles y bitácora', 'Manual de usuario y nota técnica incluidos'],
     pantallas: [
-      { src: '/productos/taller/01-tickets.png', pie: 'Lista de tickets por estado' },
-      { src: '/productos/taller/02-expediente.png', pie: 'Expediente de un equipo con su historial' },
-      { src: '/productos/taller/03-tablero.png', pie: 'Tablero de carga del taller' },
+      { src: '/productos/taller/01-bandeja.jpg', pie: 'Bandeja del taller: cada equipo con su estado, orden, sucursal y plazo vencido en rojo' },
+      { src: '/productos/taller/02-expediente.jpg', pie: 'Expediente de un equipo: estado, técnico, datos del ingreso, resultado, documentos y custodia' },
+      { src: '/productos/taller/03-tablero.jpg', pie: 'Tablero del laboratorio: equipos en curso por etapa, por técnico y por sucursal, tiempos y recalibraciones' },
     ],
   },
   cobranzas: {
