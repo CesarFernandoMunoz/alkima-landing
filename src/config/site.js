@@ -30,7 +30,9 @@ export const site = {
         'Lee los balances públicos de la Superintendencia de Compañías, asigna una calificación de AAA a D, estima la probabilidad de cierre y sugiere un cupo según su política de crédito.',
       estado: 'disponible',
       desde: 'Septiembre de 2026',
-      enlace: 'https://radar.alkima.app',
+      enlace: '/productos/radar',
+      textoEnlace: 'Ver Radar Empresarial',
+      enlaceVivo: 'https://radar.alkima.app',
       cifras: [
         ['+150.000', 'compañías con balance'],
         ['633.000', 'balances analizados'],
@@ -45,6 +47,8 @@ export const site = {
       respuesta:
         'Prueba de entrega y seguimiento de rutas para distribución. Cada parada queda registrada con foto, hora y motivo cuando no se entrega.',
       estado: 'produccion',
+      enlace: '/productos/hoja-viva',
+      textoEnlace: 'Ver Hoja Viva',
     },
     {
       id: 'taller',
@@ -54,6 +58,8 @@ export const site = {
         'Tickets y trazabilidad de equipos en talleres y laboratorios de servicio técnico, desde el ingreso hasta la entrega.',
       estado: 'piloto',
       desde: 'Octubre de 2026',
+      enlace: '/productos/taller',
+      textoEnlace: 'Ver Taller',
     },
     {
       id: 'cobranzas',
@@ -63,6 +69,8 @@ export const site = {
         'Cartera por asesor con riesgo por cliente, promesas de pago y disputas, tablero de días de cobro, estado de cuenta en PDF, recordatorios por WhatsApp y portal del cliente. Convive con su ERP.',
       estado: 'produccion',
       desde: 'Octubre de 2026',
+      enlace: '/productos/cobranzas',
+      textoEnlace: 'Ver el CRM',
     },
     {
       id: 'finanzas',
