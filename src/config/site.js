@@ -63,10 +63,10 @@ export const site = {
     },
     {
       id: 'cobranzas',
-      nombre: 'CRM de cartera y cobranzas',
-      pregunta: '¿Quién me debe, cuánto y cuándo me paga?',
+      nombre: 'CRM comercial y de cobranzas',
+      pregunta: '¿A cuánto vendo, qué cotizo y quién me debe?',
       respuesta:
-        'Cartera por asesor con riesgo por cliente, promesas de pago y disputas, tablero de días de cobro, estado de cuenta en PDF, recordatorios por WhatsApp y portal del cliente. Convive con su ERP.',
+        'Consulta de precios y stock, cotizaciones con margen y aprobación, cartera por riesgo, promesas y disputas, tablero de días de cobro, estado de cuenta en PDF, WhatsApp y portal del cliente. Convive con su ERP.',
       estado: 'produccion',
       desde: 'Octubre de 2026',
       enlace: '/productos/cobranzas',
