@@ -41,7 +41,7 @@ export function Pie() {
         </div>
         <div>
           <div className="titulo">Productos</div>
-          {site.productos.filter(p => p.enlace).map(p => <a key={p.id} href={p.enlace}>{p.nombre}</a>)}
+          {site.productos.filter(p => p.enlace && p.id !== 'finanzas').map(p => <a key={p.id} href={p.enlace}>{p.nombre}</a>)}
           <a href={f.enlace}>{f.nombre}</a>
           <a href="/blog/regla-50-30-20">Blog de finanzas</a>
         </div>

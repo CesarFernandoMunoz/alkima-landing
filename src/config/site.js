@@ -55,6 +55,32 @@ export const site = {
       estado: 'piloto',
       desde: 'Octubre de 2026',
     },
+    {
+      id: 'cobranzas',
+      nombre: 'CRM de cartera y cobranzas',
+      pregunta: '¿Quién me debe, cuánto y cuándo me paga?',
+      respuesta:
+        'Cartera por asesor con riesgo por cliente, promesas de pago y disputas, tablero de días de cobro, estado de cuenta en PDF, recordatorios por WhatsApp y portal del cliente. Convive con su ERP.',
+      estado: 'produccion',
+      desde: 'Octubre de 2026',
+    },
+    {
+      id: 'finanzas',
+      nombre: 'Alkima Finanzas',
+      pregunta: '¿A dónde se va mi dinero cada mes?',
+      respuesta:
+        'App de finanzas personales: cuentas, tarjetas, presupuesto, metas, deudas y patrimonio. Abierta y gratis: es nuestra carta de presentación de cómo construimos.',
+      estado: 'abierto',
+      enlace: process.env.NEXT_PUBLIC_APP_URL || 'https://app.alkima.app',
+      textoEnlace: 'Pruébala gratis',
+    },
+  ],
+
+  // Por qué nosotros: lo que sostiene cada entrega.
+  pilares: [
+    ['Profesionales con casos reales', 'Quien diseña la solución ha vivido la operación: cartera, distribución, servicio técnico, cierre contable. Entendemos el problema antes de abrir el editor.'],
+    ['Inteligencia artificial aplicada', 'La usamos donde ahorra horas de verdad: leer comprobantes, clasificar, predecir cobros, redactar. Siempre con una persona revisando antes de entregar.'],
+    ['Sus datos a salvo', 'Datos separados por empresa, acceso por rol, bitácora de cada cambio y pruebas con el usuario más restringido antes de publicar.'],
   ],
 
   // Producto para personas, aparte de los de empresa.
@@ -69,4 +95,5 @@ export const etiquetasEstado = {
   produccion: 'En producción',
   piloto: 'En piloto',
   disponible: 'Disponible',
+  abierto: 'Abierto y gratis',
 }
