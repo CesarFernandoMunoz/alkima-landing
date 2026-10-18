@@ -57,6 +57,7 @@ const schemaOrg = {
       email: site.correo,
       logo: { '@type': 'ImageObject', url: `${BASE_URL}/icon-512.png`, width: 512, height: 512 },
       address: { '@type': 'PostalAddress', addressLocality: site.ciudad, addressCountry: 'EC' },
+      sameAs: Object.values(site.redes),
     },
     {
       '@type': 'WebSite',

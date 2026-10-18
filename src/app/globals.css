@@ -166,7 +166,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 
 /* Pie claro */
 .labs .pie { background: var(--gris); color: var(--texto-2); padding: 48px 0 32px; font-size: 13px; }
-.labs .pie .contenedor { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+.labs .pie .contenedor { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
 .labs .pie .marca { color: var(--texto); margin-bottom: 12px; font-size: 19px; }
 .labs .pie a { text-decoration: none; display: block; margin-bottom: 8px; color: var(--texto-2); }
 .labs .pie a:hover { color: var(--texto); }

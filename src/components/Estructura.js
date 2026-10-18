@@ -65,6 +65,11 @@ export function Pie() {
           <a href="/privacidad">Política de privacidad</a>
           <a href="/cookies">Política de cookies</a>
         </div>
+        <div>
+          <div className="titulo">Síguenos</div>
+          <a href={site.redes.linkedin} rel="me noopener" target="_blank">LinkedIn</a>
+          <a href={site.redes.github} rel="me noopener" target="_blank">GitHub</a>
+        </div>
         <div className="final">© 2026 {site.nombre}. Desarrollado con herramientas de IA como Claude, con revisión y pruebas antes de cada entrega.</div>
       </div>
     </footer>

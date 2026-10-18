@@ -7,6 +7,10 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alkima.app', // alkima.app redirige a www en Vercel
   appUrl: process.env.NEXT_PUBLIC_APP_URL || 'https://app.alkima.app',
   correo: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@alkima.app',
+  redes: {
+    linkedin: 'https://www.linkedin.com/company/alkima-labs',
+    github: 'https://github.com/alkimalabs',
+  },
   pais: 'Ecuador',
   ciudad: 'Quito',
   locale: 'es_EC',
