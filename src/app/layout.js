@@ -8,9 +8,9 @@ const texto = Source_Sans_3({ subsets: ['latin'], weight: ['400', '600'], variab
 const sora = Sora({ subsets: ['latin'], weight: ['400', '700', '800'], variable: '--font-sora', display: 'swap' })
 
 const BASE_URL = site.url
-const TITULO = `${site.nombre} — Software de operaciones a medida para empresas`
+const TITULO = `${site.nombre} — Software de operaciones y finanzas para empresas`
 const DESCRIPCION =
-  'Alkima Labs diseña y construye software de operaciones a medida para empresas de Ecuador: entregas y rutas, servicio técnico y análisis financiero.'
+  'Alkima Labs diseña y construye software de operaciones y finanzas para empresas de Ecuador: entregas y rutas, servicio técnico, cobranzas y análisis financiero.'
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),

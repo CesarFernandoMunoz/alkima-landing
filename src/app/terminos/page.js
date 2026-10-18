@@ -9,7 +9,7 @@ export default function Terminos() {
       <P>Al usar este sitio o Alkima Finanzas, usted acepta estos términos. Si no está de acuerdo, no use el servicio.</P>
 
       <H2>1. El servicio</H2>
-      <P>{site.nombre} desarrolla software de operaciones a medida para empresas y ofrece Alkima Finanzas, una aplicación de finanzas personales. Los desarrollos a medida se rigen por el contrato o la propuesta firmada con cada cliente.</P>
+      <P>{site.nombre} desarrolla software de operaciones y finanzas a medida para empresas y ofrece Alkima Finanzas, una aplicación de finanzas personales. Los desarrollos a medida se rigen por el contrato o la propuesta firmada con cada cliente.</P>
 
       <H2>2. Alkima Finanzas</H2>
       <UL>

@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="contenedor">
-            <span className="etiqueta">Software de operaciones a medida · {site.ciudad}, {site.pais}</span>
+            <span className="etiqueta">Software de operaciones y finanzas · {site.ciudad}, {site.pais}</span>
             <h1>Software que entiende su negocio<span className="punto">.</span></h1>
             <p>Construimos las herramientas que su operación necesita y su ERP no resuelve: cartera y cobranzas, entregas y rutas, servicio técnico, análisis financiero. Con inteligencia artificial y con sus datos a salvo.</p>
             <div className="acciones">
