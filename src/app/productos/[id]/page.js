@@ -11,7 +11,9 @@ export function generateStaticParams() {
   return ids.map(id => ({ id }))
 }
 
-export function generateMetadata({ params }) {
+// En Next 15 los parámetros llegan como promesa.
+export async function generateMetadata(props) {
+  const params = await props.params
   const p = site.productos.find(x => x.id === params.id)
   const d = detalles[params.id]
   if (!p || !d) return {}
@@ -28,7 +30,8 @@ export function generateMetadata({ params }) {
 // Solo se muestran las pantallas que existen en public/: así la página no enseña imágenes rotas mientras se capturan.
 const pantallasDisponibles = lista => lista.filter(s => existsSync(join(process.cwd(), 'public', s.src)))
 
-export default function Producto({ params }) {
+export default async function Producto(props) {
+  const params = await props.params
   const p = site.productos.find(x => x.id === params.id)
   const d = detalles[params.id]
   if (!p || !d) notFound()
