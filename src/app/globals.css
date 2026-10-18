@@ -49,9 +49,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* Cabecera blanca translúcida */
 .labs .cabecera { background: rgba(255,255,255,.78); backdrop-filter: saturate(1.6) blur(18px); -webkit-backdrop-filter: saturate(1.6) blur(18px); color: var(--texto); position: sticky; top: 0; z-index: 50; border-bottom: 0.5px solid rgba(0,0,0,.08); }
 .labs .cabecera .contenedor { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
-.labs .marca { display: flex; align-items: center; gap: 8px; text-decoration: none; font-family: var(--fuente-display); font-size: 21px; letter-spacing: -.02em; color: inherit; }
-.labs .marca b { font-weight: 600; }
-.labs .marca .anillo { width: 20px; height: 20px; border-radius: 50%; border: 4px solid var(--lima); display: inline-block; box-sizing: border-box; }
+.labs .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--fuente-display); font-size: 22px; letter-spacing: -.02em; color: inherit; line-height: 1; }
+.labs .marca b { font-weight: 500; }
+.labs .marca .sufijo { font-weight: 300; letter-spacing: .22em; font-size: 15px; margin-left: 2px; padding-top: 4px; }
+.labs .marca .isotipo { display: block; flex-shrink: 0; }
+.labs .pie .guia { font-family: var(--fuente-display); font-weight: 300; font-size: 15px; color: var(--texto-2); margin: -4px 0 12px; }
 .labs .nav { display: flex; gap: 26px; align-items: center; }
 .labs .nav a { color: var(--texto); text-decoration: none; font-size: 14px; font-weight: 500; opacity: .85; }
 .labs .nav a:hover { opacity: 1; }
@@ -64,6 +66,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .labs .hero .contenedor { position: relative; display: flex; flex-direction: column; align-items: center; gap: 24px; }
 .labs .hero h1 { font-size: clamp(40px, 7vw, 84px); max-width: 16ch; letter-spacing: -.035em; }
 .labs .hero h1 .punto { color: var(--lima); }
+.labs .hero .guia { font-family: var(--fuente-display); font-weight: 300; font-size: clamp(22px, 2.6vw, 30px); color: var(--texto); margin: -6px 0 4px; letter-spacing: -.01em; }
+/* Concepto de marca: dos piezas, una decisión */
+.labs .concepto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 56px; align-items: center; }
+.labs .concepto .figura { display: grid; place-items: center; background: var(--negro-puro); border-radius: var(--radio); min-height: 360px; padding: 40px; }
+.labs .concepto .figura svg { width: min(100%, 300px); height: auto; }
+.labs .concepto h2 { font-size: clamp(32px, 4.6vw, 56px); letter-spacing: -.03em; }
+.labs .concepto .piezas { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.labs .concepto .pieza { background: var(--blanco); border-radius: var(--radio-chico); padding: 22px 24px; }
+.labs .concepto .pieza .marca-pieza { width: 28px; height: 22px; border-radius: 7px; display: block; margin-bottom: 14px; }
+.labs .concepto .pieza .criterio { background: var(--negro); clip-path: polygon(50% 0, 100% 100%, 0 100%); border-radius: 0; }
+.labs .concepto .pieza .senal { background: var(--lima); transform: rotate(-10deg); }
+.labs .concepto .pieza h3 { font-size: 20px; margin-bottom: 6px; }
+.labs .concepto .pieza p { margin: 0; color: var(--texto-2); font-size: 16px; }
+.labs .concepto > div > p { color: var(--texto-2); font-size: clamp(17px, 1.9vw, 21px); line-height: 1.5; margin: 18px 0 0; max-width: 52ch; }
+@media (max-width: 860px) { .labs .concepto { grid-template-columns: 1fr; gap: 28px; } .labs .concepto .piezas { grid-template-columns: 1fr; } .labs .concepto .figura { min-height: 240px; } }
 .labs .hero p { font-size: clamp(18px, 2.1vw, 23px); color: var(--texto-2); max-width: 52ch; margin: 0; line-height: 1.45; }
 .labs .hero .acciones { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 6px; }
 @media (max-width: 640px) { .labs .hero { padding: 64px 0 56px; } }

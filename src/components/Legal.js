@@ -1,4 +1,5 @@
 import { site } from '../config/site'
+import { Marca } from './Estructura'
 
 // Estructura común de las páginas legales. El contenido de cada una vive en su propia página.
 export function PaginaLegal({ titulo, children }) {
@@ -9,7 +10,7 @@ export function PaginaLegal({ titulo, children }) {
     <div className="labs">
       <header className="cabecera">
         <div className="contenedor">
-          <a href="/" className="marca" aria-label={site.nombre}><span className="anillo" aria-hidden="true" /><b>Alkima</b>Labs</a>
+          <Marca href="/" />
         </div>
       </header>
       <main className="legal">

@@ -1,5 +1,5 @@
 import { site, etiquetasEstado } from '../config/site'
-import { Cabecera, Pie, Flecha } from '../components/Estructura'
+import { Cabecera, Pie, Flecha, Isotipo } from '../components/Estructura'
 
 const principios = [
   ['Entendemos primero, construimos después', 'Antes de escribir código recorremos su operación: quién hace qué, dónde se pierde tiempo y qué decisión no se puede tomar por falta de datos.'],
@@ -21,6 +21,7 @@ export default function Home() {
           <div className="contenedor">
             <span className="etiqueta">Software de operaciones y finanzas · {site.ciudad}, {site.pais}</span>
             <h1>Software que entiende su negocio<span className="punto">.</span></h1>
+            <p className="guia">Nosotros somos la guía.</p>
             <p>Construimos las herramientas que su operación necesita y su ERP no resuelve: cartera y cobranzas, entregas y rutas, servicio técnico, análisis financiero. Con inteligencia artificial y con sus datos a salvo.</p>
             <div className="acciones">
               <a href={contacto} className="btn btn-negro">Hablemos de su proyecto <Flecha /></a>
@@ -36,6 +37,20 @@ export default function Home() {
             <span>Sus datos separados, con bitácora y acceso por rol</span>
           </div>
         </div>
+
+        <section id="guia" className="blanca">
+          <div className="contenedor concepto">
+            <div className="figura" aria-hidden="true"><Isotipo negativo tamano={300} /></div>
+            <div>
+              <h2>Dos piezas, una decisión<span className="punto">.</span></h2>
+              <p>Una empresa llega con una pregunta que su sistema no responde y sale con una respuesta clara. Nuestra marca son dos piezas que solo sirven juntas: el criterio de quien conoce la operación y la señal que dan los datos. Entre las dos queda el espacio donde usted decide.</p>
+              <div className="piezas">
+                <div className="pieza"><span className="marca-pieza criterio" aria-hidden="true" /><h3>El criterio</h3><p>Experiencia en operaciones y finanzas. Entendemos el negocio antes de escribir código.</p></div>
+                <div className="pieza"><span className="marca-pieza senal" aria-hidden="true" /><h3>La señal</h3><p>Tecnología e inteligencia artificial aplicadas. El dato que ilumina la decisión.</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="por-que" className="gris">
           <div className="contenedor">
