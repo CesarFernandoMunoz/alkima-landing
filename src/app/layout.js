@@ -10,7 +10,7 @@ const sora = Sora({ subsets: ['latin'], weight: ['400', '700', '800'], variable:
 const BASE_URL = site.url
 const TITULO = `${site.nombre} — Software de operaciones y finanzas para empresas`
 const DESCRIPCION =
-  'Alkima Labs diseña y construye software de operaciones y finanzas para empresas de Ecuador: entregas y rutas, servicio técnico, cobranzas y análisis financiero.'
+  'Software de operaciones y finanzas a medida para empresas de Ecuador: entregas y rutas, servicio técnico, cobranzas y riesgo de crédito.'
 
 export const metadata = {
   metadataBase: new URL(BASE_URL),

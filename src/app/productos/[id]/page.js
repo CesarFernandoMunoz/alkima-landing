@@ -15,11 +15,13 @@ export function generateMetadata({ params }) {
   const p = site.productos.find(x => x.id === params.id)
   const d = detalles[params.id]
   if (!p || !d) return {}
+  // Descripción corta para buscadores (Bing marca error por encima de 160 caracteres); el resumen completo queda en la página.
+  const descripcion = d.resumen.length <= 155 ? d.resumen : d.resumen.slice(0, 152).replace(/\s+\S*$/, '') + '…'
   return {
     title: `${p.nombre} · ${d.titular}`,
-    description: d.resumen,
+    description: descripcion,
     alternates: { canonical: `${site.url}/productos/${params.id}` },
-    openGraph: { title: p.nombre, description: d.resumen, url: `${site.url}/productos/${params.id}`, siteName: site.nombre, locale: site.locale, type: 'website' },
+    openGraph: { title: p.nombre, description: descripcion, url: `${site.url}/productos/${params.id}`, siteName: site.nombre, locale: site.locale, type: 'website' },
   }
 }
 
