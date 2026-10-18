@@ -52,6 +52,16 @@ export default function Producto({ params }) {
           </div>
         </section>
 
+        {d.video && (
+          <section className="blanca">
+            <div className="contenedor">
+              <h2><span className="ligero">En un minuto.</span>Vea cómo funciona.</h2>
+              <video className="video-demo" controls preload="metadata" playsInline src={d.video} />
+              <p className="sub">Video demo con datos de prueba. Narración en español.</p>
+            </div>
+          </section>
+        )}
+
         {pantallas.length > 0 && (
           <section className="gris">
             <div className="contenedor">
