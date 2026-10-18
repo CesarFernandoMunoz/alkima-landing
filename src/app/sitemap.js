@@ -13,7 +13,6 @@ export default function sitemap() {
     { ruta: '/productos/hoja-viva', frecuencia: 'monthly', prioridad: 0.8, fecha: ahora },
     { ruta: '/productos/cobranzas', frecuencia: 'monthly', prioridad: 0.8, fecha: ahora },
     { ruta: '/productos/taller', frecuencia: 'monthly', prioridad: 0.8, fecha: ahora },
-    { ruta: '/videos', frecuencia: 'monthly', prioridad: 0.7, fecha: ahora },
     { ruta: '/blog/regla-50-30-20', frecuencia: 'monthly', prioridad: 0.8, fecha: '2025-01-15T00:00:00.000Z' },
     { ruta: '/blog/fondo-emergencia', frecuencia: 'monthly', prioridad: 0.8, fecha: '2025-01-20T00:00:00.000Z' },
     { ruta: '/blog/deudas-bola-nieve', frecuencia: 'monthly', prioridad: 0.8, fecha: '2025-01-25T00:00:00.000Z' },

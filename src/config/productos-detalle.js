@@ -2,7 +2,6 @@
 // de prueba o difuminados: nunca información real de clientes.
 export const detalles = {
   'hoja-viva': {
-    video: '/videos/hoja-viva.mp4',
     titular: 'Cada entrega con evidencia, cada ruta bajo control.',
     resumen:
       'Hoja Viva reemplaza la hoja de ruta en papel de una distribuidora: el conductor recibe sus paradas en el celular, registra cada entrega con foto y hora, y la oficina ve en tiempo real qué llegó, qué no y por qué.',
@@ -26,7 +25,6 @@ export const detalles = {
     ],
   },
   taller: {
-    video: '/videos/taller.mp4',
     titular: 'Del ingreso del equipo a la entrega, sin perder el hilo.',
     resumen:
       'Un sistema de tickets para talleres y laboratorios de servicio técnico: cada equipo que entra tiene un expediente con su estado, su historial, sus fotos y la comunicación con el cliente.',
@@ -48,7 +46,6 @@ export const detalles = {
     ],
   },
   cobranzas: {
-    video: '/videos/cobranzas.mp4',
     titular: 'Precios, cotizaciones y cobranzas en una sola pantalla, junto al ERP.',
     resumen:
       'Un CRM comercial que vive junto al ERP: el asesor consulta precio y stock al instante, arma la cotización y la envía; cobranzas toma las facturas pendientes, las ordena por riesgo, registra promesas y disputas, y le dice a cada gestora qué cobrar hoy. Con estado de cuenta en PDF, avisos por WhatsApp y portal para que el cliente vea lo suyo.',
@@ -77,7 +74,6 @@ export const detalles = {
     ],
   },
   radar: {
-    video: '/videos/radar.mp4',
     titular: '¿Le vendo a crédito a esta empresa? Una respuesta en segundos.',
     resumen:
       'Radar Empresarial lee los balances públicos de la Superintendencia de Compañías, asigna una calificación de AAA a D, estima la probabilidad de cierre y sugiere un cupo de crédito según la política de cada empresa.',
