@@ -7,6 +7,18 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alkima.app', // alkima.app redirige a www en Vercel
   appUrl: process.env.NEXT_PUBLIC_APP_URL || 'https://app.alkima.app',
   correo: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hola@alkima.app',
+  // Botón flotante de WhatsApp. Número en formato internacional sin "+" ni el 0 inicial (Ecuador: 593 + 9 dígitos).
+  // Vacío = el botón no aparece. El mensaje inicial cambia según la página desde la que escriben.
+  whatsapp: {
+    numero: process.env.NEXT_PUBLIC_WHATSAPP ?? '593983501807',
+    ocultarEn: ['/privacidad', '/terminos', '/cookies'],
+    mensajes: {
+      inicio: 'Hola, vengo de alkima.app y quiero conocer sus soluciones para mi empresa.',
+      producto: 'Hola, vengo de alkima.app y me interesa {producto}.',
+      finanzas: 'Hola, tengo una consulta sobre Alkima Finanzas.',
+      blog: 'Hola, leí el blog de alkima.app y tengo una consulta.',
+    },
+  },
   redes: {
     linkedin: 'https://www.linkedin.com/company/alkima-labs',
     github: 'https://github.com/alkimalabs',

@@ -245,3 +245,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .labs .dos-columnas .cifras { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 28px; }
 .labs .dos-columnas .cifras b { display: block; font-family: var(--fuente-display); font-size: 28px; font-weight: 600; letter-spacing: -.02em; color: var(--indigo); }
 .labs .dos-columnas .cifras span { font-size: 12px; color: var(--texto-2); }
+
+/* ── Botón flotante de WhatsApp ─────────────────────────────────────────── */
+.boton-whatsapp {
+  position: fixed; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 60;
+  display: inline-flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 20px 0 14px;
+  border-radius: 999px; background: #25d366; color: #0b141a; text-decoration: none;
+  font-family: var(--font-texto), system-ui, sans-serif; font-weight: 600; font-size: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .22); transition: transform .15s ease, box-shadow .15s ease;
+}
+.boton-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0, 0, 0, .28); }
+.boton-whatsapp:focus-visible { outline: 3px solid #c8f449; outline-offset: 3px; }
+@media (max-width: 640px) {
+  .boton-whatsapp { right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); width: 56px; padding: 0; justify-content: center; }
+  .boton-whatsapp-texto { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .boton-whatsapp { transition: none; } .boton-whatsapp:hover { transform: none; } }
+@media print { .boton-whatsapp { display: none; } }

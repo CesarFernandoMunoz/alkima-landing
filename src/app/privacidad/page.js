@@ -23,7 +23,7 @@ export default function Privacidad() {
         <li><strong>Familia:</strong> los perfiles de niñas, niños y adolescentes que crea un adulto (nombre o apodo, mesada, tareas, metas y lo que se le entrega). Si el adulto le da una cuenta propia a un adolescente, guardamos su correo mientras tenga ese acceso.</li>
         <li><strong>Avisos por correo:</strong> si los activa, guardamos esa preferencia y con cuántos días de anticipación quiere el aviso.</li>
         <li><strong>Registros técnicos:</strong> una bitácora de quién cambió qué y cuándo (para seguridad y para poder corregir errores), qué funciones se usan (sin el contenido de lo que registra) y cuándo y con qué resultado se envió cada correo (sin guardar el texto del correo).</li>
-        <li><strong>Si nos escribe:</strong> su nombre, su correo y su mensaje, para responderle.</li>
+        <li><strong>Si nos escribe</strong> por correo o por WhatsApp: su nombre, su correo o número de teléfono y su mensaje, solo para responderle.</li>
       </UL>
       <P><strong>Lo que no hacemos:</strong> no pedimos su ubicación, cámara ni contactos; no rastreamos si abre los correos ni en qué enlaces hace clic; no vendemos sus datos ni los usamos para publicidad de terceros; no tomamos decisiones automáticas sobre usted.</P>
 
@@ -48,6 +48,7 @@ export default function Privacidad() {
         <li><strong>Vercel:</strong> alojamiento del sitio y de la aplicación.</li>
         <li><strong>Resend:</strong> envío de los correos.</li>
         <li><strong>Zoho:</strong> el buzón donde recibimos sus mensajes.</li>
+        <li><strong>WhatsApp (Meta):</strong> si decide escribirnos por ese medio; el botón del sitio solo abre la conversación y no instala nada de Meta en la página.</li>
       </UL>
       <P>Estos proveedores tienen sus servidores principalmente en Estados Unidos, por lo que hay una transferencia internacional de datos. La hacemos con proveedores que ofrecen acuerdos de tratamiento de datos, cifrado en tránsito y en reposo y controles de seguridad reconocidos. También entregaremos datos cuando una autoridad competente lo ordene conforme a la ley.</P>
 

@@ -1,6 +1,7 @@
 import { Jost, Source_Sans_3, Sora } from 'next/font/google'
 import { site } from '../config/site'
 import './globals.css'
+import { BotonWhatsApp } from '../components/BotonWhatsApp'
 
 // Jost (geométrica, al estilo Avant Garde) para titulares; Source Sans para texto; Sora se conserva para /finanzas.
 const display = Jost({ subsets: ['latin'], weight: ['300', '500', '600'], variable: '--font-display', display: 'swap' })
@@ -85,6 +86,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <BotonWhatsApp />
       </body>
     </html>
   )
