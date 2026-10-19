@@ -93,10 +93,10 @@ export const site = {
       nombre: 'Alkima Finanzas',
       pregunta: '¿A dónde se va mi dinero cada mes?',
       respuesta:
-        'App de finanzas personales: cuentas, tarjetas, presupuesto, metas, deudas y patrimonio. Abierta y gratis: es nuestra carta de presentación de cómo construimos.',
+        'App de finanzas personales: cuentas, tarjetas, presupuesto, metas, deudas y patrimonio. Gratis y sin trucos: sin planes de pago, sin anuncios y sin vender sus datos. Es nuestra carta de presentación.',
       estado: 'abierto',
       enlace: process.env.NEXT_PUBLIC_APP_URL || 'https://app.alkima.app',
-      textoEnlace: 'Pruébala gratis',
+      textoEnlace: 'Es gratis',
     },
   ],
 
