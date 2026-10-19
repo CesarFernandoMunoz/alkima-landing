@@ -2,7 +2,7 @@
 // Botón flotante para escribir por WhatsApp. No carga scripts de terceros ni usa cookies: es un enlace a wa.me
 // que abre la conversación con un mensaje inicial según la página. Número y textos viven en config/site.js.
 import { usePathname } from 'next/navigation'
-import { site } from '../config/site'
+import { site, enlaceWhatsApp } from '../config/site'
 
 function mensajePara(ruta) {
   const m = site.whatsapp.mensajes
@@ -20,7 +20,7 @@ export function BotonWhatsApp() {
   const ruta = usePathname() || '/'
   const { numero, ocultarEn } = site.whatsapp
   if (!numero || ocultarEn.some(r => ruta === r || ruta.startsWith(`${r}/`))) return null
-  const href = `https://wa.me/${numero}?text=${encodeURIComponent(mensajePara(ruta))}`
+  const href = enlaceWhatsApp(mensajePara(ruta))
   return (
     <a className="boton-whatsapp" href={href} target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
       <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">

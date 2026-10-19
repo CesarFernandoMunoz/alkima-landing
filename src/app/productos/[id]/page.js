@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { site, etiquetasEstado } from '../../../config/site'
+import { site, etiquetasEstado, enlaceWhatsApp } from '../../../config/site'
 import { detalles } from '../../../config/productos-detalle'
 import { Cabecera, Pie, Flecha } from '../../../components/Estructura'
 import { existsSync } from 'fs'
@@ -35,7 +35,9 @@ export default async function Producto(props) {
   const p = site.productos.find(x => x.id === params.id)
   const d = detalles[params.id]
   if (!p || !d) notFound()
-  const contacto = `mailto:${site.correo}?subject=${encodeURIComponent(`Consulta sobre ${p.nombre}`)}`
+  const contacto = enlaceWhatsApp(site.whatsapp.mensajes.producto.replace('{producto}', p.nombre), `Consulta sobre ${p.nombre}`)
+  const correo = `mailto:${site.correo}?subject=${encodeURIComponent(`Consulta sobre ${p.nombre}`)}`
+  const externo = contacto.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}
   const pantallas = pantallasDisponibles(d.pantallas)
 
   return (
@@ -52,7 +54,7 @@ export default async function Producto(props) {
             <p>{d.resumen}</p>
             <div className="acciones">
               {d.enlaceVivo && <a href={d.enlaceVivo} className="btn btn-lima">Abrir {p.nombre} <Flecha /></a>}
-              <a href={contacto} className="btn btn-negro">Quiero algo así para mi empresa <Flecha /></a>
+              <a href={contacto} {...externo} className="btn btn-negro">Quiero algo así para mi empresa <Flecha /></a>
             </div>
           </div>
         </section>
@@ -111,7 +113,8 @@ export default async function Producto(props) {
           <div className="contenedor">
             <h2>¿Su operación tiene esta misma pregunta?</h2>
             <p>Cuéntenos cómo lo resuelve hoy. Le respondemos con una propuesta clara: qué se puede automatizar, cuánto tomaría y qué ahorra.</p>
-            <a href={contacto} className="btn btn-lima">{site.correo} <Flecha /></a>
+            <a href={contacto} {...externo} className="btn btn-lima">Escríbanos por WhatsApp <Flecha /></a>
+            <a href={correo} style={{ display: 'block', marginTop: 18, color: 'rgba(255,255,255,.72)', fontSize: 15 }}>o por correo: {site.correo}</a>
           </div>
         </section>
       </main>

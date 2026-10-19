@@ -33,7 +33,7 @@ export function Cabecera({ producto = 'Labs', hrefMarca = '/', enlaces = [], acc
         <Marca href={hrefMarca} producto={producto} />
         <nav className="nav" aria-label="Principal">
           {enlaces.map(([t, h]) => <a key={h} href={h}>{t}</a>)}
-          {accion && <a href={accion[1]} className="boton">{accion[0]}</a>}
+          {accion && <a href={accion[1]} className="boton" {...(accion[1].startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{accion[0]}</a>}
         </nav>
       </div>
     </header>

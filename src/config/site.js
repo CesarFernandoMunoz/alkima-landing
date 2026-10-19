@@ -121,3 +121,11 @@ export const etiquetasEstado = {
   disponible: 'Disponible',
   abierto: 'Abierto y gratis',
 }
+
+/** Enlace para abrir WhatsApp con un mensaje inicial. Si no hay número configurado, cae al correo de contacto. */
+export function enlaceWhatsApp(mensaje, asuntoCorreo = 'Consulta') {
+  const n = site.whatsapp?.numero
+  return n
+    ? `https://wa.me/${n}?text=${encodeURIComponent(mensaje)}`
+    : `mailto:${site.correo}?subject=${encodeURIComponent(asuntoCorreo)}`
+}

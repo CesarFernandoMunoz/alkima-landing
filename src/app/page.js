@@ -1,4 +1,4 @@
-import { site, etiquetasEstado } from '../config/site'
+import { site, etiquetasEstado, enlaceWhatsApp } from '../config/site'
 import { Cabecera, Pie, Flecha, Isotipo } from '../components/Estructura'
 
 const principios = [
@@ -9,12 +9,14 @@ const principios = [
 ]
 
 export default function Home() {
-  const contacto = `mailto:${site.correo}?subject=${encodeURIComponent('Consulta sobre software a medida')}`
+  const contacto = enlaceWhatsApp(site.whatsapp.mensajes.inicio, 'Consulta sobre software a medida')
+  const correo = `mailto:${site.correo}?subject=${encodeURIComponent('Consulta sobre software a medida')}`
+  const externo = contacto.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}
   const radar = site.productos.find(p => p.id === 'radar')
 
   return (
     <div className="labs">
-      <Cabecera producto="Labs" hrefMarca="/" enlaces={[['Productos', '#productos'], ['Por qué nosotros', '#por-que'], ['Cómo trabajamos', '#como-trabajamos']]} accion={['Hablemos', '#contacto']} />
+      <Cabecera producto="Labs" hrefMarca="/" enlaces={[['Productos', '#productos'], ['Por qué nosotros', '#por-que'], ['Cómo trabajamos', '#como-trabajamos']]} accion={['Hablemos', contacto]} />
 
       <main>
         <section className="hero">
@@ -24,7 +26,7 @@ export default function Home() {
             <p className="guia">Nosotros somos la guía.</p>
             <p>Construimos las herramientas que su operación necesita y su ERP no resuelve: cartera y cobranzas, entregas y rutas, servicio técnico, análisis financiero. Con inteligencia artificial y con sus datos a salvo.</p>
             <div className="acciones">
-              <a href={contacto} className="btn btn-negro">Hablemos de su proyecto <Flecha /></a>
+              <a href={contacto} {...externo} className="btn btn-negro">Hablemos de su proyecto <Flecha /></a>
               <a href="#productos" className="btn btn-borde">Ver productos</a>
             </div>
           </div>
@@ -111,7 +113,8 @@ export default function Home() {
           <div className="contenedor">
             <h2>Cuéntenos qué no logra resolver hoy su operación.</h2>
             <p>Le respondemos con una propuesta clara: qué se puede automatizar, cuánto tomaría y qué ahorra. Radar ya analizó {radar.cifras[1][0]} balances; su caso puede ser el siguiente.</p>
-            <a href={contacto} className="btn btn-lima">{site.correo} <Flecha /></a>
+            <a href={contacto} {...externo} className="btn btn-lima">Escríbanos por WhatsApp <Flecha /></a>
+            <a href={correo} style={{ display: 'block', marginTop: 18, color: 'rgba(255,255,255,.72)', fontSize: 15 }}>o por correo: {site.correo}</a>
           </div>
         </section>
       </main>
