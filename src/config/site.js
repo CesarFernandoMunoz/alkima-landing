@@ -20,7 +20,7 @@ export const site = {
     titular: 'César Muñoz', // persona responsable del sitio
     razonSocial: '', // completar cuando se constituya la S.A.S.
     ruc: '', // completar cuando el RUC esté activo
-    fechaActualizacionLegal: '2026-10-12',
+    fechaActualizacionLegal: '2026-10-19',
   },
 
   // Cada producto responde una pregunta concreta que una gerencia se hace a diario.
