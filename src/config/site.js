@@ -30,6 +30,7 @@ export const site = {
   // Datos legales: dejar vacío lo que todavía no exista. El pie de página solo muestra lo que esté lleno.
   legal: {
     titular: 'César Muñoz', // persona responsable del sitio
+    cargoTitular: 'Fundador', // cómo se presenta en el pie del sitio (en las páginas legales sigue como "Responsable")
     razonSocial: '', // completar cuando se constituya la S.A.S.
     ruc: '', // completar cuando el RUC esté activo
     fechaActualizacionLegal: '2026-10-19',

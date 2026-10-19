@@ -50,7 +50,7 @@ export function Pie() {
           <div className="marca"><Isotipo /><b>alkima</b><span className="sufijo">labs</span></div>
           <div className="guia">Nosotros somos la guía.</div>
           {site.ciudad}, {site.pais}<br />
-          {l.razonSocial || `Responsable: ${l.titular}`}{l.ruc ? ` · RUC ${l.ruc}` : ''}<br />
+          {l.razonSocial || `${l.cargoTitular || 'Responsable'}: ${l.titular}`}{l.ruc ? ` · RUC ${l.ruc}` : ''}<br />
           <a href={`mailto:${site.correo}`}>{site.correo}</a>
         </div>
         <div>
